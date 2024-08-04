@@ -2,6 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Fat.eot");
+  src: local("YekanBakh-Fat"),
+    url("../public/yekanBakh/YekanBakh-Fat.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Fat.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Fat.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Fat.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Medium.eot");
+  src: local("YekanBakh-Medium"),
+    url("../public/yekanBakh/YekanBakh-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Medium.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Medium.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Bold.eot");
+  src: local("YekanBakh-Bold"),
+    url("../public/yekanBakh/YekanBakh-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Bold.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Bold.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Light.eot");
+  src: local("YekanBakh-Light"),
+    url("../public/yekanBakh/YekanBakh-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Light.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Light.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Heavy.eot");
+  src: local("YekanBakh-Heavy"),
+    url("../public/yekanBakh/YekanBakh-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Heavy.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Heavy.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Thin.eot");
+  src: local("YekanBakh-Thin"),
+    url("../public/yekanBakh/YekanBakh-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Thin.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Thin.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Regular.eot");
+  src: local("YekanBakh-Regular"),
+    url("../public/yekanBakh/YekanBakh-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Regular.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Regular.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../public/yekanBakh/YekanBakh-Hairline.eot");
+  src: local("YekanBakh-Hairline"),
+    url("../public/yekanBakh/YekanBakh-Hairline.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/yekanBakh/YekanBakh-Hairline.woff2") format("woff2"),
+    url("../public/yekanBakh/YekanBakh-Hairline.woff") format("woff"),
+    url("../public/yekanBakh/YekanBakh-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,17 +129,188 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Yekan Bakh" !important;
+}
+.swiper-button-next::after {
+  content: url("../assets/Nextbtn.svg") !important;
+}
+.swiper-button-prev::after {
+  content: url("../assets/Prevbtn.svg") !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+.transition-s {
+  animation: fadeIn 0.5s ease-in-out;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  /* -moz-appearance: none; */
+  width: 90%;
+  height: 3px;
+  background-color: #a5a3a3;
+
+  margin: 0 auto;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*Chrome thumb*/
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  appearance: none; /* Firefox */
+  width: 70px; /* عرض thumb */
+  height: 16px; /* ارتفاع thumb */
+  border-radius: 5px; /* انحنای گوشه‌ها */
+  background-image: url("../assets/Progressbtn.svg"); /* تصویر به عنوان thumb */
+  background-size: cover; /* اندازه مناسب برای تصویر */
+  cursor: pointer; /* نمایش اشاره‌گر موس */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 26px; /* عرض thumb */
+  height: 16px; /* ارتفاع thumb */
+  border-radius: 5px; /* انحنای گوشه‌ها */
+  background-image: url("../assets/Progressbtn.svg"); /* تصویر به عنوان thumb */
+  background-size: cover; /* اندازه مناسب برای تصویر */
+  cursor: pointer; /* نمایش اشاره‌گر موس */
+}
+
+input[type="range"]::-ms-thumb {
+  width: 26px; /* عرض thumb */
+  height: 16px; /* ارتفاع thumb */
+  border-radius: 5px; /* انحنای گوشه‌ها */
+  background-image: url("../assets/Progressbtn.svg"); /* تصویر به عنوان thumb */
+  background-size: cover; /* اندازه مناسب برای تصویر */
+  cursor: pointer; /* نمایش اشاره‌گر موس */
+}
+
+/*Mozilla thumb*/
+
+input[type="range"]::-moz-range-thumb {
+}
+
+/*IE & Edge input*/
+
+input[type="range"]::-ms-track {
+  width: 300px;
+  height: 6px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 2px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+/*IE & Edge thumb*/
+
+input[type="range"]::-ms-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 5px;
+  background: #e7e7e7;
+  border: 1px solid #c5c5c5;
+}
+
+/*IE & Edge left side*/
+
+input[type="range"]::-ms-fill-lower {
+  background: #919e4b;
+  border-radius: 2px;
+}
+
+/*IE & Edge right side*/
+
+input[type="range"]::-ms-fill-upper {
+  background: #c5c5c5;
+  border-radius: 2px;
+}
+
+/*IE disable tooltip*/
+
+input[type="range"]::-ms-tooltip {
+  display: none;
+}
+
+input[type="text"] {
+  border: none;
+}
+
+/* From Uiverse.io by DaniloMGutavo */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 2px #707070;
+  transition: background-color 0.3s;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 10px;
+  top: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox:checked ~ .checkmark {
+  background-color: #5fed2f;
+
+  border: none;
+}
+
+.custom-checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+
+@keyframes checkAnim {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 10px;
+  }
+}
+
+.custom-checkbox:checked ~ .checkmark:after {
+  animation: checkAnim 0.2s forwards;
 }
